@@ -1,6 +1,8 @@
 ---
-import '../styles/global.css'
-const pageTitle = 'Home'
+import Footer from '../components/Footer.astro';
+import "../styles/global.css";
+import HeaderComp from "../components/HeaderComp.astro";
+const pageTitle = "Home";
 ---
 
 <html lang="en">
@@ -12,10 +14,8 @@ const pageTitle = 'Home'
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">home</a>
-		<a href="/about/">about</a>
-		<a href="/blog/">Blog</a>
-
+		<HeaderComp/>
 		<h1>{pageTitle}</h1>
+		<Footer />
 	</body>
 </html>
